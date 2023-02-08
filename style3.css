@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    width: 80%;
+    margin: 15px auto 0;
+  }
+
+  #ppForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "id id"
+      "alas tinggi"
+      "button button";
+  }
+  
+  #ppForm * {
+    margin: 7px;
+    padding: 7px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  #ppForm button {
+    outline: none;
+    background-color: #64cded;
+    color: white;
+    border: 5px solid transparent;
+    cursor: pointer;
+  }
+  
+  #ppForm input {
+    border: 3px solid  #64cded;
+    outline: none;
+  }
+  
+  #ppForm input:focus {
+    border: 3px solid #367bfa;
+  }
+  
+  #ppForm button:active {
+    border-color: #367bfa;
+  }
+  
